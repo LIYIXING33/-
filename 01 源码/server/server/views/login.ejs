@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, max-scale=1">
+  <meta name="description" content="菜鸟驿站登录页面">
+  <meta name="author" content="Wangyuda">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <title><%= title%></title>
+</head>
+
+<body>
+  <div class="login-wrapper">
+    <div class="login-nav">
+      <img src="/images/logo.png" alt="">
+    </div>
+    <div class="login-content">
+      <div class="login-box">
+        <div class="login-box__title">
+          <h4>
+            菜鸟驿站<br/>
+            后台管理系统
+          </h4>
+        </div>
+        <form class="login-box__form">
+          <img class="mb-4" src="/images/login_min.png" alt="" width="72" height="57">
+          <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+      
+          <div class="form-floating">
+            <input type="text" class="form-control" id="username" placeholder="用户名">
+            <label for="username">用户名</label>
+          </div>
+          <div class="form-floating">
+            <input type="password" class="form-control" id="password" placeholder="密码">
+            <label for="password">密码</label>
+          </div>
+          <button class="w-100 btn btn-lg btn-primary mt-3" type="button" id="login">Sign in</button>
+          <p class="mt-5 mb-3 text-muted" onclick="location.href = '/register'">注册</p>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="/js/axios.min.js"></script>
+  <script src="/js/app.js"></script>
+  <script src="/js/login.js"></script>
+</body>
+</html>

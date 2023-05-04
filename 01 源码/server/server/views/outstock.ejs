@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel='stylesheet' href='/css/style.css' />
+  </head>
+  <body>
+    <div class="index-wrapper output-wrapper">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/">库存查询</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/instock">商品入库</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/outstock">商品出库</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/errstock">库存异常</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/customer">客户信息</a>
+        </li>
+      </ul>
+      <div class="nav-content">
+        <div class="row g-3 align-items-center">
+          <div class="col-6">
+            <input type="text" id="outstockInput" class="form-control" placeholder="取件id">
+          </div>
+          <div class="col-auto">
+            <button type="button" class="btn btn-primary" id="outstockBtn">出库</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/axios.min.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/outstock.js"></script>
+  </body>
+</html>

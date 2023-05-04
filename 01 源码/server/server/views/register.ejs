@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, max-scale=1">
+  <meta name="description" content="菜鸟驿站注册页面">
+  <meta name="author" content="Wangyuda">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <title><%= title%></title>
+</head>
+
+<body>
+  <div class="register-wrapper">
+    <div class="register-bg"></div>
+    <form class="register-form" name="form">
+      <img class="mb-4" src="/images/login_min.png" alt="" width="72" height="57">
+      <h1 class="h3 mb-3 fw-normal">Please register</h1>
+  
+      <div class="form-floating mb-1">
+        <input type="text" class="form-control" id="username" name="username" placeholder="用户名">
+        <label for="username">用户名</label>
+      </div>
+      <div class="form-floating mb-1">
+        <input type="password" class="form-control" id="password" name="password" placeholder="密码">
+        <label for="password">密码</label>
+      </div>
+      <div class="form-floating mb-1">
+        <input type="password" class="form-control" id="password2" name="password2" placeholder="确认密码">
+        <label for="password2">确认密码</label>
+      </div>
+      <div class="form-floating mb-1">
+        <input type="text" class="form-control" id="name" name="name" placeholder="真实名字">
+        <label for="name">真实名字</label>
+      </div>
+      <div class="form-floating mb-1">
+        <input type="text" class="form-control" id="phone" name="phone" placeholder="手机号">
+        <label for="phone">手机号</label>
+      </div>
+      
+      <button class="w-100 btn btn-lg btn-primary mt-3" id="submitBtn" type="button">注册</button>
+      <p class="mt-5 text-muted" onclick="location.href = '/login'">已有账号，去登录</p>
+    </form>
+  </div>
+  <script src="/js/axios.min.js"></script>
+  <script src="/js/md5.min.js"></script>
+  <script src="/js/app.js"></script>
+  <script src="/js/register.js"></script>
+</body>
+</html>
